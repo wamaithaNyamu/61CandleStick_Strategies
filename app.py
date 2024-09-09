@@ -125,5 +125,17 @@ async def advanced_blocks(request: Request):
     return await get_result("CDLADVANCEBLOCK", False, True,request)
 
 
+@app.post("/belt_hold")
+async def belt_hold(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLBELTHOLD.c#L260
+    Integer is positive (1 to 100) when white (bullish), negative (-1 to -100) when black (bearish)
+    """
+    return await get_result("CDLBELTHOLD", False, True,request)
+
+
+    
+
     
 

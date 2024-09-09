@@ -124,7 +124,7 @@ fastapi run app.py
 - ✅ Three Stars In The South
 - ✅ Three Advancing White Soldiers
 - ✅ Abandoned Baby
-- [ ] Advance Block
+- ✅ Advance Block
 - [ ] Belt-hold
 - [ ] Breakaway
 - [ ] Closing Marubozu
