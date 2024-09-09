@@ -123,7 +123,7 @@ fastapi run app.py
 - ✅ Three Outside Up/Down
 - ✅ Three Stars In The South
 - ✅ Three Advancing White Soldiers
-- [ ] Abandoned Baby
+- ✅ Abandoned Baby
 - [ ] Advance Block
 - [ ] Belt-hold
 - [ ] Breakaway
