@@ -125,9 +125,9 @@ fastapi run app.py
 - ✅ Three Advancing White Soldiers
 - ✅ Abandoned Baby
 - ✅ Advance Block
-- [ ] Belt-hold
-- [ ] Breakaway
-- [ ] Closing Marubozu
+- ✅ Belt-hold
+- ✅ Breakaway
+- ✅ Closing Marubozu
 - [ ] Concealing Baby Swallow
 - [ ] Counterattack
 - [ ] Dark Cloud Cover

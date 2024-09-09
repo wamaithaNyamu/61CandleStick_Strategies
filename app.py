@@ -8,9 +8,6 @@ from ta import add_all_ta_features
 app = FastAPI()
 
 
-@app.get("/")
-def test_ground():
-    return "test mic! test mic!"
 
 
 async def get_result(candlestick, positive, negative,request):
@@ -32,7 +29,13 @@ async def get_result(candlestick, positive, negative,request):
                 return "down"
             else:
                 return "none"
-    
+  
+ 
+@app.get("/")
+def test_ground():
+    return "test mic! test mic!"
+
+   
 @app.post("/two_crows")
 async def two_crows(request: Request):
     """
@@ -119,7 +122,7 @@ async def abandoned_baby(request: Request):
 async def advanced_blocks(request: Request):
     """
     Link to the core: 
-    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLADVANCEBLOCK.c#L260
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLADVANCEBLOCK.c#L271
     Integer is negative (-1 to -100): two crows is always bearish; 
     """
     return await get_result("CDLADVANCEBLOCK", False, True,request)
@@ -132,10 +135,27 @@ async def belt_hold(request: Request):
     https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLBELTHOLD.c#L260
     Integer is positive (1 to 100) when white (bullish), negative (-1 to -100) when black (bearish)
     """
-    return await get_result("CDLBELTHOLD", False, True,request)
+    return await get_result("CDLBELTHOLD", True, True,request)
 
 
-    
+  
+@app.post("/breakaway")
+async def breakaway(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLBREAKAWAY.c#L223
+    Integer is positive (1 to 100) when bullish or negative (-1 to -100) when bearish;
+    """
+    return await get_result("CDLBREAKAWAY", True, True,request)
 
-    
+  
+@app.post("/closing_marubozu")
+async def closing_marubozu(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLCLOSINGMARUBOZU.c#L235
+    Integer is positive (1 to 100) when white (bullish), negative (-1 to -100) when black (bearish)
+    """
+    return await get_result("CDLCLOSINGMARUBOZU", True, True,request)
+
 
