@@ -78,24 +78,7 @@ async def three_inside_up_down(request: Request):
     Link to the core: https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDL3INSIDE.c#L222
     Integer is positive (1 to 100) for the three inside up or negative (-1 to -100) for the three inside down; 
     """
-    # get the OHLC from MT5
-    candles = await request.body()
-    # turn the bytes to string
-    candles=candles.decode('utf8').replace("'", '"')
-    # turn the string to json
-    candles = json.loads(candles)
-    # create a df
-    df = pd.DataFrame(candles)
-    # Three inside up or down 
-    df['Three_Inside_Up_Down'] = getattr(abstract, 'CDL3INSIDE')(df)
-    # get the 
-    last_element = df['Three_Inside_Up_Down'].iloc[-1]
-    if 0 < last_element <= 100:
-        return "up"
-    elif  0 > last_element >= -100:
-        return "down"
-    else:
-        return "none"
+    return await get_result("CDL3INSIDE", True, True,request)
     
 
 @app.post("/three_line_strike")
@@ -103,27 +86,9 @@ async def three_inside_up_down(request: Request):
     """
     Link to the core: https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDL3LINESTRIKE.c#L224C10-L224C68
     Integer is positive (1 to 100) when bullish or negative (-1 to -100) when bearish;
-
     """
-    # get the OHLC from MT5
-    candles = await request.body()
-    # turn the bytes to string
-    candles=candles.decode('utf8').replace("'", '"')
-    # turn the string to json
-    candles = json.loads(candles)
-    # create a df
-    df = pd.DataFrame(candles)
-    # Three inside up or down 
-    df['Three_Line_Strike'] = getattr(abstract, 'CDL3LINESTRIKE')(df)
-    # get the 
-    last_element = df['Three_Line_Strike'].iloc[-1]
-    if 0 < last_element <= 100:
-        return "up"
-    elif  0 > last_element >= -100:
-        return "down"
-    else:
-        return "none"
-        
+    return await get_result("CDL3LINESTRIKE", True, True,request)
+    
     
 
 @app.post("/three_outside_up_or_down")
@@ -132,24 +97,8 @@ async def three_outside_up_or_down(request: Request):
     Link to the core: https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDL3OUTSIDE.c#L211C10-L211C117
     Integer is positive (1 to 100) for the three outside up or negative (-1 to -100) for the three outside down
     """
-    # get the OHLC from MT5
-    candles = await request.body()
-    # turn the bytes to string
-    candles=candles.decode('utf8').replace("'", '"')
-    # turn the string to json
-    candles = json.loads(candles)
-    # create a df
-    df = pd.DataFrame(candles)
-    # Three inside up or down 
-    df['Three_Line_Strike'] = getattr(abstract, 'CDL3OUTSIDE')(df)
-    # get the 
-    last_element = df['Three_Line_Strike'].iloc[-1]
-    if 0 < last_element <= 100:
-        return "up"
-    elif  0 > last_element >= -100:
-        return "down"
-    else:
-        return "none"
+    return await get_result("CDL3OUTSIDE", True, True,request)
+
         
     
     
@@ -159,23 +108,8 @@ async def three_advancing_white_soldiers(request: Request):
     Link to the core: https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDL3WHITESOLDIERS.c#L260
     Integer is positive (1 to 100): advancing 3 white soldiers is always bullish;
     """
-    # get the OHLC from MT5
-    candles = await request.body()
-    # turn the bytes to string
-    candles=candles.decode('utf8').replace("'", '"')
-    # turn the string to json
-    candles = json.loads(candles)
-    # create a df
-    df = pd.DataFrame(candles)
-    # Three inside up or down 
-    df['Three_Line_Strike'] = getattr(abstract, 'CDL3WHITESOLDIERS')(df)
-    # get the 
-    last_element = df['Three_Line_Strike'].iloc[-1]
-    if 0 < last_element <= 100:
-        return "up"
-    else:
-        return "none"
-    
+    return await get_result("CDL3WHITESOLDIERS", True, False,request)
+
     
 @app.post("/three_advanced_blocks")
 async def three_advanced_blocks(request: Request):

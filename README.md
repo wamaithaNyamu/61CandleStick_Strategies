@@ -23,8 +23,6 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
-
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -75,15 +73,26 @@ You can refer to the C++ core modules found [here](https://github.com/TA-Lib/ta-
 
 ### Prerequisites
 - Python 3.12+
-- For MacOS or Linux you need wine installed (or any other windows emulator)
-- 
-
 
 ### Installation
+Head to https://github.com/cgohlke/talib-build/releases/tag/v0.4.32 . Download the talib build  that suits your architecture and save the file on the same directory.
 
+- Install Ta_Lib 
+```shell
+python -m pip install <the-talib-wheel-file>.whl
+```
+
+- Install fast api using 
+```shell
+pip install "fastapi[standard]"
+```
+
+- Install dependencies 
+```shell
+pip install -r requirements.txt
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- USAGE EXAMPLES -->
