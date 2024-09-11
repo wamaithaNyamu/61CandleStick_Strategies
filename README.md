@@ -161,7 +161,7 @@ fastapi run app.py
 - ✅ Morning Doji Star
 - ✅ Morning Star
 - ✅ On-Neck Pattern
-- [ ] Piercing Pattern
+- ✅ Piercing Pattern
 - [ ] Rickshaw Man
 - [ ] Rising/Falling Three Methods
 - [ ] Separating Lines

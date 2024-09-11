@@ -496,3 +496,13 @@ async def on_neck(request: Request):
     Integer is negative (-1 to -100): on-neck is always bearish
     """
     return await get_result("CDLONNECK", False, True,request)
+
+
+@app.post("/piercing_pattern")
+async def piercing_pattern(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLPIERCING.c#L223
+    Integer is positive (1 to 100): piercing pattern is always bullish
+    """
+    return await get_result("CDLPIERCING", False, True,request)
