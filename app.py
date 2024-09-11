@@ -299,3 +299,13 @@ async def harami_pattern(request: Request):
      - 80 is returned when the two real bodies match on one end (Greg Morris contemplate this case in his book "Candlestick charting explained"
     """
     return await get_result("CDLHARAMI", True, True,request)
+
+
+@app.post("/harami_cross_pattern")
+async def harami_cross_pattern(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLHARAMICROSS.c#L233
+    Integer is positive (1 to 100) when bullish or negative (-1 to -100) when bearish:
+    """
+    return await get_result("CDLHARAMICROSS", True, True,request)

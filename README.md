@@ -142,7 +142,7 @@ fastapi run app.py
 - ✅ Hammer
 - ✅ Hanging Man
 - ✅ Harami Pattern
-- [ ] Harami Cross Pattern
+- ✅ Harami Cross Pattern
 - [ ] High-Wave Candle
 - [ ] Hikkake Pattern
 - [ ] Modified Hikkake Pattern
