@@ -138,7 +138,7 @@ fastapi run app.py
 - ✅ Evening Doji Star
 - ✅ Evening Star
 - ✅ Up/Down-gap side-by-side white lines
-- [ ] Gravestone Doji
+- ✅ Gravestone Doji
 - [ ] Hammer
 - [ ] Hanging Man
 - [ ] Harami Pattern

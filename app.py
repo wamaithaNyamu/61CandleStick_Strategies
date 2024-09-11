@@ -255,8 +255,18 @@ async def evening_star(request: Request):
 async def up_or_down_gap_side_by_side_white_lines(request: Request):
     """
     Link to the core: 
-    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLGAPSIDESIDEWHITE.c#L260
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLGAPSIDESIDEWHITE.c#L230
     Integer is positive (1 to 100) or negative (-1 to -100)
     """
     return await get_result("CDLGAPSIDESIDEWHITE", True, True,request)
+
+@app.post("/gravestone_doji")
+async def gravestone_doji(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLGRAVESTONEDOJI.c#L228
+    Integer is always positive (1 to 100) but this does not mean it is bullish 
+    """
+    return await get_result("CDLGRAVESTONEDOJI", True, False,request)
+
 
