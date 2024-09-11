@@ -218,3 +218,13 @@ async def dragonfly_doji(request: Request):
     """
     return await get_result("CDLDRAGONFLYDOJI", True, False,request)
 
+@app.post("/engulfing_pattern")
+async def engulfing_pattern(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLENGULFING.c#L212
+    Integer is positive (1 to 100) when bullish or negative (-1 to -100) when bearish:
+    - 100 is returned when the second candle's real body begins before and ends after the first candle's real body
+    - 80 is returned when the two real bodies match on one end (Greg Morris contemplate this case in his book "Candlestick charting explained")
+    """
+    return await get_result("CDLENGULFING", True, True,request)

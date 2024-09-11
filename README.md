@@ -134,7 +134,7 @@ fastapi run app.py
 - ✅ Doji
 - ✅ Doji Star
 - ✅ Dragonfly Doji
-- [ ] Engulfing Pattern
+- ✅ Engulfing Pattern
 - [ ] Evening Doji Star
 - [ ] Evening Star
 - [ ] Up/Down-gap side-by-side white lines
