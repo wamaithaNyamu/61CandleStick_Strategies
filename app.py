@@ -505,4 +505,16 @@ async def piercing_pattern(request: Request):
     https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLPIERCING.c#L223
     Integer is positive (1 to 100): piercing pattern is always bullish
     """
-    return await get_result("CDLPIERCING", False, True,request)
+    return await get_result("CDLPIERCING", True, False,request)
+
+
+
+@app.post("/rickshaw_man")
+async def rickshaw_man(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLRICKSHAWMAN.c#L241
+    Integer is always positive (1 to 100) but this does not mean it is bullish: rickshaw man shows uncertainty
+    """
+    return await get_result("CDLRICKSHAWMAN", False, True,request)
+

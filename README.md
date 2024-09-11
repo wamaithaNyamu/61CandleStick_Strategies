@@ -162,7 +162,7 @@ fastapi run app.py
 - ✅ Morning Star
 - ✅ On-Neck Pattern
 - ✅ Piercing Pattern
-- [ ] Rickshaw Man
+- ✅ Rickshaw Man
 - [ ] Rising/Falling Three Methods
 - [ ] Separating Lines
 - [ ] Shooting Star
