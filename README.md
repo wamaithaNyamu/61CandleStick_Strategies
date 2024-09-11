@@ -163,7 +163,7 @@ fastapi run app.py
 - ✅ On-Neck Pattern
 - ✅ Piercing Pattern
 - ✅ Rickshaw Man
-- [ ] Rising/Falling Three Methods
+- ✅ Rising/Falling Three Methods
 - [ ] Separating Lines
 - [ ] Shooting Star
 - [ ] Short Line Candle

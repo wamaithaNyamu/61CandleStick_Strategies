@@ -516,5 +516,15 @@ async def rickshaw_man(request: Request):
     https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLRICKSHAWMAN.c#L241
     Integer is always positive (1 to 100) but this does not mean it is bullish: rickshaw man shows uncertainty
     """
-    return await get_result("CDLRICKSHAWMAN", False, True,request)
+    return await get_result("CDLRICKSHAWMAN", True, False,request)
+
+@app.post("/rising_falling_three_methods")
+async def rising_falling_three_methods(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLRISEFALL3METHODS.c#L237
+    Integer is positive (1 to 100) or negative (-1 to -100)
+    """
+    return await get_result("CDLRISEFALL3METHODS", True, True,request)
+
 
