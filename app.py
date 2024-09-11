@@ -644,3 +644,15 @@ async def unique_three_river(request: Request):
 
 
 
+@app.post("/upside_gap_two_crows")
+async def upside_gap_two_crows(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLUPSIDEGAP2CROWS.c#L230
+    Integer is negative (-1 to -100): upside gap two crows is always bearish; 
+    
+    """
+    return await get_result("CDLUPSIDEGAP2CROWS", False, True,request)
+
+
+

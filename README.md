@@ -175,7 +175,7 @@ fastapi run app.py
 - ✅ Thrusting Pattern
 - ✅ Tristar Pattern
 - ✅ Unique 3 River
-- [ ] Upside Gap Two Crows
+- ✅ Upside Gap Two Crows
 - [ ] Upside/Downside Gap Three Methods
 
 See the [open issues](https://github.com/wamaithanyamu/61CandleStick_Strategies/issues) for a full list of proposed features (and known issues).
