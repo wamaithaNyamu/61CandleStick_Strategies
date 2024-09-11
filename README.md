@@ -146,7 +146,7 @@ fastapi run app.py
 - ✅ High-Wave Candle
 - ✅ Hikkake Pattern
 - ✅ Modified Hikkake Pattern
-- [ ] Homing Pigeon
+- ✅ Homing Pigeon
 - [ ] Identical Three Crows
 - [ ] In-Neck Pattern
 - [ ] Inverted Hammer

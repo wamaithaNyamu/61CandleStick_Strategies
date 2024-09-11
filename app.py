@@ -340,3 +340,23 @@ async def modified_hikkake(request: Request):
     Integer[hikkake bar] is positive (1 to 100) or negative (-1 to -100) meaning bullish or bearish hikkake   
     """
     return await get_result("CDLHIKKAKEMOD", True, True,request)
+
+
+@app.post("/modified_hikkake")
+async def modified_hikkake(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLHIKKAKEMOD.c#L256
+    Integer[hikkake bar] is positive (1 to 100) or negative (-1 to -100) meaning bullish or bearish hikkake   
+    """
+    return await get_result("CDLHIKKAKEMOD", True, True,request)
+
+
+@app.post("/homing_pigeon")
+async def homing_pigeon(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLHOMINGPIGEON.c#L231
+    Integer is positive (1 to 100): homing pigeon is always bullish; 
+    """
+    return await get_result("CDLHOMINGPIGEON", True, True,request)
