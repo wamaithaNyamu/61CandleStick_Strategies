@@ -153,7 +153,7 @@ fastapi run app.py
 - ✅ Kicking
 - ✅ Kicking - bull/bear determined by the longer marubozu
 - ✅ Ladder Bottom
-- [ ] Long Legged Doji
+- ✅ Long Legged Doji
 - [ ] Long Line Candle
 - [ ] Marubozu
 - [ ] Matching Low

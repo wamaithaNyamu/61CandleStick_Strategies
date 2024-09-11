@@ -418,3 +418,13 @@ async def ladder_bottom(request: Request):
     Integer is positive (1 to 100): ladder bottom is always bullish; 
     """
     return await get_result("CDLLADDERBOTTOM", True, True,request)
+
+
+@app.post("/longlegged_doji")
+async def longlegged_doji(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLLONGLEGGEDDOJI.c#L227
+    Integer is always positive (1 to 100) but this does not mean it is bullish: long legged doji shows uncertainty
+    """
+    return await get_result("CDLLONGLEGGEDDOJI", True, False,request)
