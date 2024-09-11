@@ -168,7 +168,7 @@ fastapi run app.py
 - ✅ Shooting Star
 - ✅ Short Line Candle
 - ✅ Spinning Top
-- [ ] Stalled Pattern
+- ✅ Stalled Pattern
 - [ ] Stick Sandwich
 - [ ] Takuri (Dragonfly Doji with very long lower shadow)
 - [ ] Tasuki Gap

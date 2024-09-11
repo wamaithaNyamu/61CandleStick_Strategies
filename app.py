@@ -565,3 +565,13 @@ async def spinning_top(request: Request):
     Integer is positive (1 to 100) when white, negative (-1 to -100) when black;
     """
     return await get_result("CDLSPINNINGTOP", True, True,request)
+
+
+@app.post("/stalled_pattern")
+async def stalled_pattern(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLSTALLEDPATTERN.c#L256
+    Integer is negative (-1 to -100): stalled pattern is always bearish;
+    """
+    return await get_result("CDLSTALLEDPATTERN", False, True,request)
