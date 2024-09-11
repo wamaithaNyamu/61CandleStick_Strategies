@@ -208,3 +208,13 @@ async def doji_star(request: Request):
     """
     return await get_result("CDLDOJISTAR", True, True,request)
 
+
+@app.post("/dragonfly_doji")
+async def dragonfly_doji(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLDRAGONFLYDOJI.c#L236
+    Integer is always positive (1 to 100) but this does not mean it is bullish: 
+    """
+    return await get_result("CDLDRAGONFLYDOJI", True, False,request)
+
