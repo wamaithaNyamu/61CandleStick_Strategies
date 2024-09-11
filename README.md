@@ -166,7 +166,7 @@ fastapi run app.py
 - ✅ Rising/Falling Three Methods
 - ✅ Separating Lines
 - ✅ Shooting Star
-- [ ] Short Line Candle
+- ✅ Short Line Candle
 - [ ] Spinning Top
 - [ ] Stalled Pattern
 - [ ] Stick Sandwich

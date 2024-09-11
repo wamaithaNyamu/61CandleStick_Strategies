@@ -544,4 +544,14 @@ async def shooting_star(request: Request):
     https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLSHOOTINGSTAR.c#L237
     Integer is negative (-1 to -100): shooting star is always bearish;
     """
-    return await get_result("CDLSHOOTINGSTAR", True, True,request)
+    return await get_result("CDLSHOOTINGSTAR", False, True,request)
+
+
+@app.post("/shortline_candle")
+async def shortline_candle(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLSHORTLINE.c#L226
+    Integer is positive (1 to 100) when white, negative (-1 to -100) when black;
+    """
+    return await get_result("CDLSHORTLINE", True, True,request)
