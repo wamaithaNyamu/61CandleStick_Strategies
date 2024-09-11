@@ -319,3 +319,14 @@ async def high_wave_candle(request: Request):
     Integer is positive (1 to 100) when bullish or negative (-1 to -100) when bearish:
     """
     return await get_result("CDLHIGHWAVE", True, True,request)
+
+@app.post("/hikkake")
+async def hikkake(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLHIKKAKE.c#L239
+    Integer[confirmationbar] is equal to 100 + the bullish hikkake result or -100 - the bearish hikkake result
+    Note: if confirmation and a new hikkake come at the same bar, only the new hikkake is reported (the new hikkake 
+    overwrites the confirmation of the old hikkake)    
+    """
+    return await get_result("CDLHIKKAKE", True, True,request)

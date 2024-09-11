@@ -144,7 +144,7 @@ fastapi run app.py
 - ✅ Harami Pattern
 - ✅ Harami Cross Pattern
 - ✅ High-Wave Candle
-- [ ] Hikkake Pattern
+- ✅ Hikkake Pattern
 - [ ] Modified Hikkake Pattern
 - [ ] Homing Pigeon
 - [ ] Identical Three Crows
