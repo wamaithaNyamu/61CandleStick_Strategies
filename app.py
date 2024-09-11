@@ -585,7 +585,7 @@ async def stick_sandwich(request: Request):
     https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLSTICKSANDWICH.c#L221
     Integer is always positive (1 to 100): stick sandwich is always bullish;
     """
-    return await get_result("CDLSTICKSANDWICH", False, True,request)
+    return await get_result("CDLSTICKSANDWICH", True, False,request)
 
 
 @app.post("/takuri")
@@ -595,7 +595,7 @@ async def takuri(request: Request):
     https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLTAKURI.c#L237
     Integer is always positive (1 to 100) but this does not mean it is bullish: 
     """
-    return await get_result("CDLTAKURI", False, True,request)
+    return await get_result("CDLTAKURI", True, False,request)
 
 
 @app.post("/tasuki_gap")
@@ -606,3 +606,14 @@ async def tasuki_gap(request: Request):
     Integer is positive (1 to 100) when bullish or negative (-1 to -100) when bearish;
     """
     return await get_result("CDLTASUKIGAP", True, True,request)
+
+
+
+@app.post("/thrusting_pattern")
+async def thrusting_pattern(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLTHRUSTING.c#L229
+    Integer is negative (-1 to -100): thrusting pattern is always bearish
+    """
+    return await get_result("CDLTHRUSTING", False, True,request)

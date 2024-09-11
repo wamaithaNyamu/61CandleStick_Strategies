@@ -172,7 +172,7 @@ fastapi run app.py
 - ✅ Stick Sandwich
 - ✅ Takuri (Dragonfly Doji with very long lower shadow)
 - ✅ Tasuki Gap
-- [ ] Thrusting Pattern
+- ✅ Thrusting Pattern
 - [ ] Tristar Pattern
 - [ ] Unique 3 River
 - [ ] Upside Gap Two Crows
