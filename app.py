@@ -228,3 +228,13 @@ async def engulfing_pattern(request: Request):
     - 80 is returned when the two real bodies match on one end (Greg Morris contemplate this case in his book "Candlestick charting explained")
     """
     return await get_result("CDLENGULFING", True, True,request)
+
+
+@app.post("/evening_doji_star")
+async def evening_doji_star(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLEVENINGDOJISTAR.c#L267
+    Integer is negative (-1 to -100): evening star is always bearish; 
+    """
+    return await get_result("CDLEVENINGDOJISTAR", True, True,request)
