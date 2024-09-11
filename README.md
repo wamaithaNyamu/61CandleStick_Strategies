@@ -129,7 +129,7 @@ fastapi run app.py
 - ✅ Breakaway
 - ✅ Closing Marubozu
 - ✅ Concealing Baby Swallow
-- [ ] Counterattack
+- ✅ Counterattack
 - [ ] Dark Cloud Cover
 - [ ] Doji
 - [ ] Doji Star

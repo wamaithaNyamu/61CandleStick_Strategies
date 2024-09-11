@@ -167,3 +167,12 @@ async def conceal_baby_swallow(request: Request):
     return await get_result("CDLCONCEALBABYSWALL", True, False,request)
 
 
+
+@app.post("/counterattack")
+async def counterattack(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLCOUNTERATTACK.c#L230
+    Integer is positive (1 to 100) when bullish or negative (-1 to -100) when bearish;
+    """
+    return await get_result("CDLCOUNTERATTACK", True, True,request)
