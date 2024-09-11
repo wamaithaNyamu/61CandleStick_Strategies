@@ -159,7 +159,7 @@ fastapi run app.py
 - ✅ Matching Low
 - ✅ Mat Hold
 - ✅ Morning Doji Star
-- [ ] Morning Star
+- ✅ Morning Star
 - [ ] On-Neck Pattern
 - [ ] Piercing Pattern
 - [ ] Rickshaw Man
