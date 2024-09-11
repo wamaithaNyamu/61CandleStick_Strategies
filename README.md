@@ -147,7 +147,7 @@ fastapi run app.py
 - ✅ Hikkake Pattern
 - ✅ Modified Hikkake Pattern
 - ✅ Homing Pigeon
-- [ ] Identical Three Crows
+- ✅ Identical Three Crows
 - [ ] In-Neck Pattern
 - [ ] Inverted Hammer
 - [ ] Kicking

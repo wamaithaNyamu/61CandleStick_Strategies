@@ -359,4 +359,14 @@ async def homing_pigeon(request: Request):
     https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLHOMINGPIGEON.c#L231
     Integer is positive (1 to 100): homing pigeon is always bullish; 
     """
-    return await get_result("CDLHOMINGPIGEON", True, True,request)
+    return await get_result("CDLHOMINGPIGEON", True, False,request)
+
+
+@app.post("/identical_three_crows")
+async def identical_three_crows(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLIDENTICAL3CROWS.c#L242
+    Integer is negative (-1 to -100): identical three crows is always bearish; 
+    """
+    return await get_result("CDLIDENTICAL3CROWS", False, True,request)
