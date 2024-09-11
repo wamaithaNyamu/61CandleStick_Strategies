@@ -140,8 +140,8 @@ fastapi run app.py
 - ✅ Up/Down-gap side-by-side white lines
 - ✅ Gravestone Doji
 - ✅ Hammer
-- [ ] Hanging Man
-- [ ] Harami Pattern
+- ✅ Hanging Man
+- ✅ Harami Pattern
 - [ ] Harami Cross Pattern
 - [ ] High-Wave Candle
 - [ ] Hikkake Pattern

@@ -288,3 +288,14 @@ async def hanging_man(request: Request):
     Integer is negative (-1 to -100): hanging man is always bearish;
     """
     return await get_result("CDLHANGINGMAN", False, True,request)
+
+@app.post("/harami_pattern")
+async def harami_pattern(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLHARAMI.c#L233
+    Integer is positive (1 to 100) when bullish or negative (-1 to -100) when bearish:
+     - 100 is returned when the first candle's real body begins before and ends after the second candle's real body
+     - 80 is returned when the two real bodies match on one end (Greg Morris contemplate this case in his book "Candlestick charting explained"
+    """
+    return await get_result("CDLHARAMI", True, True,request)
