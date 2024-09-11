@@ -398,3 +398,13 @@ async def kicking(request: Request):
     Integer is positive (1 to 100) when bullish or negative (-1 to -100) when bearish
     """
     return await get_result("CDLKICKING", True, True,request)
+
+
+@app.post("/kicking_by_length")
+async def kicking_by_length(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLKICKINGBYLENGTH.c#L234
+    Integer is positive (1 to 100) when bullish or negative (-1 to -100) when bearish
+    """
+    return await get_result("CDLKICKINGBYLENGTH", True, True,request)

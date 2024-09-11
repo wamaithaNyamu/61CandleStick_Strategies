@@ -151,7 +151,7 @@ fastapi run app.py
 - ✅ In-Neck Pattern
 - ✅ Inverted Hammer
 - ✅ Kicking
-- [ ] Kicking - bull/bear determined by the longer marubozu
+- ✅ Kicking - bull/bear determined by the longer marubozu
 - [ ] Ladder Bottom
 - [ ] Long Legged Doji
 - [ ] Long Line Candle
