@@ -165,7 +165,7 @@ fastapi run app.py
 - ✅ Rickshaw Man
 - ✅ Rising/Falling Three Methods
 - ✅ Separating Lines
-- [ ] Shooting Star
+- ✅ Shooting Star
 - [ ] Short Line Candle
 - [ ] Spinning Top
 - [ ] Stalled Pattern

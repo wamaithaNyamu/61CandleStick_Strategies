@@ -537,3 +537,11 @@ async def separating_lines(request: Request):
     return await get_result("CDLSEPARATINGLINES", True, True,request)
 
 
+@app.post("/shooting_star")
+async def shooting_star(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLSHOOTINGSTAR.c#L237
+    Integer is negative (-1 to -100): shooting star is always bearish;
+    """
+    return await get_result("CDLSHOOTINGSTAR", True, True,request)
