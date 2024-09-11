@@ -617,3 +617,17 @@ async def thrusting_pattern(request: Request):
     Integer is negative (-1 to -100): thrusting pattern is always bearish
     """
     return await get_result("CDLTHRUSTING", False, True,request)
+
+
+
+@app.post("/tristar_pattern")
+async def tristar_pattern(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLTRISTAR.c#L224
+    Integer is positive (1 to 100) when bullish or negative (-1 to -100) when bearish
+    
+    """
+    return await get_result("CDLTRISTAR", True, True,request)
+
+

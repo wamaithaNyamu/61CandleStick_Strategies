@@ -173,7 +173,7 @@ fastapi run app.py
 - ✅ Takuri (Dragonfly Doji with very long lower shadow)
 - ✅ Tasuki Gap
 - ✅ Thrusting Pattern
-- [ ] Tristar Pattern
+- ✅ Tristar Pattern
 - [ ] Unique 3 River
 - [ ] Upside Gap Two Crows
 - [ ] Upside/Downside Gap Three Methods
