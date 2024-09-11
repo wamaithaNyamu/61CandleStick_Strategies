@@ -237,4 +237,26 @@ async def evening_doji_star(request: Request):
     https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLEVENINGDOJISTAR.c#L267
     Integer is negative (-1 to -100): evening star is always bearish; 
     """
-    return await get_result("CDLEVENINGDOJISTAR", True, True,request)
+    return await get_result("CDLEVENINGDOJISTAR", False, True,request)
+
+
+@app.post("/evening_star")
+async def evening_star(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLEVENINGSTAR.c#L260
+    Integer is negative (-1 to -100): evening star is always bearish; 
+    """
+    return await get_result("CDLEVENINGSTAR", False, True,request)
+
+
+
+@app.post("/up_or_down_gap_side_by_side_white_lines")
+async def up_or_down_gap_side_by_side_white_lines(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLGAPSIDESIDEWHITE.c#L260
+    Integer is positive (1 to 100) or negative (-1 to -100)
+    """
+    return await get_result("CDLGAPSIDESIDEWHITE", True, True,request)
+
