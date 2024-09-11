@@ -655,4 +655,16 @@ async def upside_gap_two_crows(request: Request):
     return await get_result("CDLUPSIDEGAP2CROWS", False, True,request)
 
 
+@app.post("/upside_or_downside_gap_three_methods")
+async def upside_or_downside_gap_three_methods(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLXSIDEGAP3METHODS.c#L212
+    Integer is positive (1 to 100) when bullish or negative (-1 to -100) when bearish;
+    
+    """
+    return await get_result("CDLXSIDEGAP3METHODS", True, True,request)
+
+
+
 
