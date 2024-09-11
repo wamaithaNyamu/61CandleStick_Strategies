@@ -128,7 +128,7 @@ fastapi run app.py
 - ✅ Belt-hold
 - ✅ Breakaway
 - ✅ Closing Marubozu
-- [ ] Concealing Baby Swallow
+- ✅ Concealing Baby Swallow
 - [ ] Counterattack
 - [ ] Dark Cloud Cover
 - [ ] Doji

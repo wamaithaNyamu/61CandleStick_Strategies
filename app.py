@@ -1,9 +1,7 @@
 import json
 from talib import abstract
-import talib
 from fastapi import FastAPI, Request
 import pandas as pd
-from ta import add_all_ta_features
 
 app = FastAPI()
 
@@ -157,5 +155,15 @@ async def closing_marubozu(request: Request):
     Integer is positive (1 to 100) when white (bullish), negative (-1 to -100) when black (bearish)
     """
     return await get_result("CDLCLOSINGMARUBOZU", True, True,request)
+
+
+@app.post("/conceal_baby_swallow")
+async def conceal_baby_swallow(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLCONCEALBABYSWALL.c#L230
+    Integer is positive (1 to 100): concealing baby swallow is always bullish;
+    """
+    return await get_result("CDLCONCEALBABYSWALL", True, False,request)
 
 
