@@ -130,7 +130,7 @@ fastapi run app.py
 - ✅ Closing Marubozu
 - ✅ Concealing Baby Swallow
 - ✅ Counterattack
-- [ ] Dark Cloud Cover
+- ✅ Dark Cloud Cover
 - [ ] Doji
 - [ ] Doji Star
 - [ ] Dragonfly Doji

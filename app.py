@@ -172,7 +172,18 @@ async def conceal_baby_swallow(request: Request):
 async def counterattack(request: Request):
     """
     Link to the core: 
-    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLCOUNTERATTACK.c#L230
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLCOUNTERATTACK.c#L235
     Integer is positive (1 to 100) when bullish or negative (-1 to -100) when bearish;
     """
     return await get_result("CDLCOUNTERATTACK", True, True,request)
+
+
+
+@app.post("/dark_cloud_cover")
+async def dark_cloud_cover(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLDARKCLOUDCOVER.c#L245
+    Integer is negative (-1 to -100): dark cloud cover is always bearish
+    """
+    return await get_result("CDLDARKCLOUDCOVER", True, True,request)
