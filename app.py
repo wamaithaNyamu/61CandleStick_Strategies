@@ -408,3 +408,13 @@ async def kicking_by_length(request: Request):
     Integer is positive (1 to 100) when bullish or negative (-1 to -100) when bearish
     """
     return await get_result("CDLKICKINGBYLENGTH", True, True,request)
+
+
+@app.post("/ladder_bottom")
+async def ladder_bottom(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLLADDERBOTTOM.c#L221
+    Integer is positive (1 to 100): ladder bottom is always bullish; 
+    """
+    return await get_result("CDLLADDERBOTTOM", True, True,request)

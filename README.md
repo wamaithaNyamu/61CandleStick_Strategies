@@ -152,7 +152,7 @@ fastapi run app.py
 - ✅ Inverted Hammer
 - ✅ Kicking
 - ✅ Kicking - bull/bear determined by the longer marubozu
-- [ ] Ladder Bottom
+- ✅ Ladder Bottom
 - [ ] Long Legged Doji
 - [ ] Long Line Candle
 - [ ] Marubozu
