@@ -370,3 +370,13 @@ async def identical_three_crows(request: Request):
     Integer is negative (-1 to -100): identical three crows is always bearish; 
     """
     return await get_result("CDLIDENTICAL3CROWS", False, True,request)
+
+@app.post("/identical_three_crows")
+async def identical_three_crows(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLINNECK.c#L232
+    Integer is negative (-1 to -100): in-neck is always bearish
+    """
+    return await get_result("CDLINNECK", False, True,request)
+

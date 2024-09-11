@@ -148,7 +148,7 @@ fastapi run app.py
 - ✅ Modified Hikkake Pattern
 - ✅ Homing Pigeon
 - ✅ Identical Three Crows
-- [ ] In-Neck Pattern
+- ✅ In-Neck Pattern
 - [ ] Inverted Hammer
 - [ ] Kicking
 - [ ] Kicking - bull/bear determined by the longer marubozu
