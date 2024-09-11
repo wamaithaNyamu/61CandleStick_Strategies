@@ -371,8 +371,8 @@ async def identical_three_crows(request: Request):
     """
     return await get_result("CDLIDENTICAL3CROWS", False, True,request)
 
-@app.post("/identical_three_crows")
-async def identical_three_crows(request: Request):
+@app.post("/in_neck")
+async def in_neck(request: Request):
     """
     Link to the core: 
     https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLINNECK.c#L232
@@ -380,3 +380,11 @@ async def identical_three_crows(request: Request):
     """
     return await get_result("CDLINNECK", False, True,request)
 
+@app.post("/inverted_hammer")
+async def inverted_hammer(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLINVERTEDHAMMER.c#L241
+    Integer is positive (1 to 100): inverted hammer is always bullish;
+    """
+    return await get_result("CDLINVERTEDHAMMER", False, True,request)

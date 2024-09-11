@@ -149,7 +149,7 @@ fastapi run app.py
 - ✅ Homing Pigeon
 - ✅ Identical Three Crows
 - ✅ In-Neck Pattern
-- [ ] Inverted Hammer
+- ✅ Inverted Hammer
 - [ ] Kicking
 - [ ] Kicking - bull/bear determined by the longer marubozu
 - [ ] Ladder Bottom
