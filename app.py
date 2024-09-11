@@ -467,3 +467,12 @@ async def mat_hold(request: Request):
     Integer is positive (1 to 100): mat hold is always bullish
     """
     return await get_result("CDLMATHOLD", True, False,request)
+
+@app.post("/morning_doji_star")
+async def morning_doji_star(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLMORNINGDOJISTAR.c#L262
+    Integer is positive (1 to 100): morning doji star is always bullish;
+    """
+    return await get_result("CDLMORNINGDOJISTAR", True, False,request)

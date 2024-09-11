@@ -158,7 +158,7 @@ fastapi run app.py
 - ✅ Marubozu
 - ✅ Matching Low
 - ✅ Mat Hold
-- [ ] Morning Doji Star
+- ✅ Morning Doji Star
 - [ ] Morning Star
 - [ ] On-Neck Pattern
 - [ ] Piercing Pattern
