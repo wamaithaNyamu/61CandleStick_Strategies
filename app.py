@@ -555,3 +555,13 @@ async def shortline_candle(request: Request):
     Integer is positive (1 to 100) when white, negative (-1 to -100) when black;
     """
     return await get_result("CDLSHORTLINE", True, True,request)
+
+
+@app.post("/spinning_top")
+async def spinning_top(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLSPINNINGTOP.c#L219
+    Integer is positive (1 to 100) when white, negative (-1 to -100) when black;
+    """
+    return await get_result("CDLSPINNINGTOP", True, True,request)
