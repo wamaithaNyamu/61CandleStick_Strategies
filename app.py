@@ -428,3 +428,13 @@ async def longlegged_doji(request: Request):
     Integer is always positive (1 to 100) but this does not mean it is bullish: long legged doji shows uncertainty
     """
     return await get_result("CDLLONGLEGGEDDOJI", True, False,request)
+
+
+@app.post("/long_line_candle")
+async def long_line_candle(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLLONGLINE.c#L226
+    Integer is positive (1 to 100) when white (bullish), negative (-1 to -100) when black (bearish)
+    """
+    return await get_result("CDLLONGLINE", True, True,request)
