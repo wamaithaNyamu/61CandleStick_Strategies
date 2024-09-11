@@ -280,3 +280,11 @@ async def hammer(request: Request):
     """
     return await get_result("CDLHAMMER", True, False,request)
 
+@app.post("/hanging_man")
+async def hanging_man(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLHANGINGMAN.c#L246
+    Integer is negative (-1 to -100): hanging man is always bearish;
+    """
+    return await get_result("CDLHANGINGMAN", False, True,request)
