@@ -150,7 +150,7 @@ fastapi run app.py
 - ✅ Identical Three Crows
 - ✅ In-Neck Pattern
 - ✅ Inverted Hammer
-- [ ] Kicking
+- ✅ Kicking
 - [ ] Kicking - bull/bear determined by the longer marubozu
 - [ ] Ladder Bottom
 - [ ] Long Legged Doji

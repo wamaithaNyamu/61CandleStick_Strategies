@@ -387,4 +387,14 @@ async def inverted_hammer(request: Request):
     https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLINVERTEDHAMMER.c#L241
     Integer is positive (1 to 100): inverted hammer is always bullish;
     """
-    return await get_result("CDLINVERTEDHAMMER", False, True,request)
+    return await get_result("CDLINVERTEDHAMMER", True, False,request)
+
+
+@app.post("/kicking")
+async def kicking(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLKICKING.c#L234
+    Integer is positive (1 to 100) when bullish or negative (-1 to -100) when bearish
+    """
+    return await get_result("CDLKICKING", True, True,request)
