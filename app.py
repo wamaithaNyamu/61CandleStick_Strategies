@@ -270,3 +270,13 @@ async def gravestone_doji(request: Request):
     return await get_result("CDLGRAVESTONEDOJI", True, False,request)
 
 
+
+@app.post("/hammer")
+async def hammer(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLHAMMER.c#L246
+    Integer is positive (1 to 100): hammer is always bullish;
+    """
+    return await get_result("CDLHAMMER", True, False,request)
+

@@ -139,7 +139,7 @@ fastapi run app.py
 - ✅ Evening Star
 - ✅ Up/Down-gap side-by-side white lines
 - ✅ Gravestone Doji
-- [ ] Hammer
+- ✅ Hammer
 - [ ] Hanging Man
 - [ ] Harami Pattern
 - [ ] Harami Cross Pattern
