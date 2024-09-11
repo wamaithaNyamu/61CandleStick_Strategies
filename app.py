@@ -198,3 +198,13 @@ async def doji(request: Request):
 
     """
     return await get_result("CDLDOJI", True, False,request)
+
+@app.post("/doji_star")
+async def doji_star(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLDOJISTAR.c#L230
+    Integer is positive (1 to 100) when bullish or negative (-1 to -100) when bearish;
+    """
+    return await get_result("CDLDOJISTAR", True, True,request)
+

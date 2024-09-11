@@ -132,7 +132,7 @@ fastapi run app.py
 - ✅ Counterattack
 - ✅ Dark Cloud Cover
 - ✅ Doji
-- [ ] Doji Star
+- ✅ Doji Star
 - [ ] Dragonfly Doji
 - [ ] Engulfing Pattern
 - [ ] Evening Doji Star
