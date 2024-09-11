@@ -457,3 +457,13 @@ async def matching_low(request: Request):
     Integer is always positive (1 to 100): matching low is always bullish;
     """
     return await get_result("CDLMATCHINGLOW", True, False,request)
+
+
+@app.post("/mat_hold")
+async def mat_hold(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLMATHOLD.c#L262
+    Integer is positive (1 to 100): mat hold is always bullish
+    """
+    return await get_result("CDLMATHOLD", True, False,request)
