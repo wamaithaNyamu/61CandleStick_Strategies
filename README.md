@@ -131,7 +131,7 @@ fastapi run app.py
 - ✅ Concealing Baby Swallow
 - ✅ Counterattack
 - ✅ Dark Cloud Cover
-- [ ] Doji
+- ✅ Doji
 - [ ] Doji Star
 - [ ] Dragonfly Doji
 - [ ] Engulfing Pattern

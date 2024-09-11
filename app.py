@@ -186,4 +186,15 @@ async def dark_cloud_cover(request: Request):
     https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLDARKCLOUDCOVER.c#L245
     Integer is negative (-1 to -100): dark cloud cover is always bearish
     """
-    return await get_result("CDLDARKCLOUDCOVER", True, True,request)
+    return await get_result("CDLDARKCLOUDCOVER", False, True,request)
+
+
+@app.post("/doji")
+async def doji(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLDOJI.c#L226
+    Integer is always positive (1 to 100) but this does not mean it is bullish: doji shows uncertainty and it is
+
+    """
+    return await get_result("CDLDOJI", True, False,request)
