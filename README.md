@@ -160,7 +160,7 @@ fastapi run app.py
 - ✅ Mat Hold
 - ✅ Morning Doji Star
 - ✅ Morning Star
-- [ ] On-Neck Pattern
+- ✅ On-Neck Pattern
 - [ ] Piercing Pattern
 - [ ] Rickshaw Man
 - [ ] Rising/Falling Three Methods

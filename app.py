@@ -486,3 +486,13 @@ async def morning_star(request: Request):
     Integer is positive (1 to 100): morning star is always bullish; 
     """
     return await get_result("CDLMORNINGSTAR", True, False,request)
+
+
+@app.post("/on_neck")
+async def on_neck(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLONNECK.c#L228
+    Integer is negative (-1 to -100): on-neck is always bearish
+    """
+    return await get_result("CDLONNECK", False, True,request)
