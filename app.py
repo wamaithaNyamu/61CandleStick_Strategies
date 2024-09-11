@@ -527,4 +527,13 @@ async def rising_falling_three_methods(request: Request):
     """
     return await get_result("CDLRISEFALL3METHODS", True, True,request)
 
+@app.post("/separating_lines")
+async def separating_lines(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLSEPARATINGLINES.c#L236
+    Integer is positive (1 to 100) when bullish or negative (-1 to -100) when bearish;
+    """
+    return await get_result("CDLSEPARATINGLINES", True, True,request)
+
 

@@ -164,7 +164,7 @@ fastapi run app.py
 - ✅ Piercing Pattern
 - ✅ Rickshaw Man
 - ✅ Rising/Falling Three Methods
-- [ ] Separating Lines
+- ✅ Separating Lines
 - [ ] Shooting Star
 - [ ] Short Line Candle
 - [ ] Spinning Top
