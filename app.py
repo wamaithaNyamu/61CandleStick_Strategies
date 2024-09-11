@@ -309,3 +309,13 @@ async def harami_cross_pattern(request: Request):
     Integer is positive (1 to 100) when bullish or negative (-1 to -100) when bearish:
     """
     return await get_result("CDLHARAMICROSS", True, True,request)
+
+
+@app.post("/high_wave_candle")
+async def high_wave_candle(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLHIGHWAVE.c#L226
+    Integer is positive (1 to 100) when bullish or negative (-1 to -100) when bearish:
+    """
+    return await get_result("CDLHIGHWAVE", True, True,request)
