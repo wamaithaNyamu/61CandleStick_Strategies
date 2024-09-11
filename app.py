@@ -575,3 +575,14 @@ async def stalled_pattern(request: Request):
     Integer is negative (-1 to -100): stalled pattern is always bearish;
     """
     return await get_result("CDLSTALLEDPATTERN", False, True,request)
+
+
+
+@app.post("/stick_sandwich")
+async def stick_sandwich(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLSTICKSANDWICH.c#L221
+    Integer is always positive (1 to 100): stick sandwich is always bullish;
+    """
+    return await get_result("CDLSTICKSANDWICH", False, True,request)
