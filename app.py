@@ -448,3 +448,12 @@ async def marubozu(request: Request):
     Integer is positive (1 to 100) when white (bullish), negative (-1 to -100) when black (bearish)
     """
     return await get_result("CDLMARUBOZU", True, True,request)
+
+@app.post("/matching_low")
+async def matching_low(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLMATCHINGLOW.c#L220
+    Integer is always positive (1 to 100): matching low is always bullish;
+    """
+    return await get_result("CDLMATCHINGLOW", True, False,request)

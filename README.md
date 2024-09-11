@@ -156,7 +156,7 @@ fastapi run app.py
 - ✅ Long Legged Doji
 - ✅ Long Line Candle
 - ✅ Marubozu
-- [ ] Matching Low
+- ✅ Matching Low
 - [ ] Mat Hold
 - [ ] Morning Doji Star
 - [ ] Morning Star
