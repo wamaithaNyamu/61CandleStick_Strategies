@@ -586,3 +586,13 @@ async def stick_sandwich(request: Request):
     Integer is always positive (1 to 100): stick sandwich is always bullish;
     """
     return await get_result("CDLSTICKSANDWICH", False, True,request)
+
+
+@app.post("/takuri")
+async def takuri(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLTAKURI.c#L237
+    Integer is always positive (1 to 100) but this does not mean it is bullish: 
+    """
+    return await get_result("CDLTAKURI", False, True,request)

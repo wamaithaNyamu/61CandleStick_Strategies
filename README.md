@@ -170,7 +170,7 @@ fastapi run app.py
 - ✅ Spinning Top
 - ✅ Stalled Pattern
 - ✅ Stick Sandwich
-- [ ] Takuri (Dragonfly Doji with very long lower shadow)
+- ✅ Takuri (Dragonfly Doji with very long lower shadow)
 - [ ] Tasuki Gap
 - [ ] Thrusting Pattern
 - [ ] Tristar Pattern
