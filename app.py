@@ -438,3 +438,13 @@ async def long_line_candle(request: Request):
     Integer is positive (1 to 100) when white (bullish), negative (-1 to -100) when black (bearish)
     """
     return await get_result("CDLLONGLINE", True, True,request)
+
+
+@app.post("/marubozu")
+async def marubozu(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLMARUBOZU.c#L226
+    Integer is positive (1 to 100) when white (bullish), negative (-1 to -100) when black (bearish)
+    """
+    return await get_result("CDLMARUBOZU", True, True,request)
