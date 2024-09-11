@@ -174,7 +174,7 @@ fastapi run app.py
 - ✅ Tasuki Gap
 - ✅ Thrusting Pattern
 - ✅ Tristar Pattern
-- [ ] Unique 3 River
+- ✅ Unique 3 River
 - [ ] Upside Gap Two Crows
 - [ ] Upside/Downside Gap Three Methods
 

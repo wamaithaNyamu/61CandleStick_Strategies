@@ -631,3 +631,16 @@ async def tristar_pattern(request: Request):
     return await get_result("CDLTRISTAR", True, True,request)
 
 
+
+@app.post("/unique_three_river")
+async def unique_three_river(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLUNIQUE3RIVER.c#L229
+    Integer is positive (1 to 100): unique 3 river is always bullish and should appear in a downtrend 
+    
+    """
+    return await get_result("CDLUNIQUE3RIVER", True, False,request)
+
+
+
