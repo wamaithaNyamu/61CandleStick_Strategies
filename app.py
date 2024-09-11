@@ -596,3 +596,13 @@ async def takuri(request: Request):
     Integer is always positive (1 to 100) but this does not mean it is bullish: 
     """
     return await get_result("CDLTAKURI", False, True,request)
+
+
+@app.post("/tasuki_gap")
+async def tasuki_gap(request: Request):
+    """
+    Link to the core: 
+    https://github.com/TA-Lib/ta-lib/blob/main/src/ta_func/ta_CDLTASUKIGAP.c#L223
+    Integer is positive (1 to 100) when bullish or negative (-1 to -100) when bearish;
+    """
+    return await get_result("CDLTASUKIGAP", True, True,request)

@@ -171,7 +171,7 @@ fastapi run app.py
 - ✅ Stalled Pattern
 - ✅ Stick Sandwich
 - ✅ Takuri (Dragonfly Doji with very long lower shadow)
-- [ ] Tasuki Gap
+- ✅ Tasuki Gap
 - [ ] Thrusting Pattern
 - [ ] Tristar Pattern
 - [ ] Unique 3 River
